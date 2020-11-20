@@ -1,0 +1,74 @@
+@import "../../globalAssets/global.scss";
+.greeting {
+  box-sizing: border-box;
+  width: calc(100% - 40px);
+  height: 100vh;
+  max-width: 1440px;
+  min-width: 360px;
+  transition: 500ms;
+  margin: 0 auto;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  .greeting__name {
+    font-family: "RobotoSlab-Bold";
+    font-size: 30px;
+    letter-spacing: 0.205em;
+    transition: 1s;
+    margin: 0;
+    @include tablet() {
+      font-size: 56px;
+    }
+    @include desktop() {
+      font-size: 80px;
+    }
+  }
+  .greeting__jobTitle {
+    font-family: "RobotoSlab-Regular";
+    font-style: normal;
+    font-size: 24px;
+    transition: 1s;
+    margin: 0;
+    @include tablet() {
+      font-size: 50px;
+    }
+  }
+}
+/******greeting screen style****/
+.headerTop{
+  height: 90px;
+  background-position: left;
+  align-items: flex-end;
+  @include tablet(){
+    height: 280px;
+  }
+  @include desktop(){
+    height: 320px;
+  }
+  .greeting__name{
+    font-size: 20px;
+    @include tablet(){
+      font-size: 37px;
+    }
+    @include desktop(){
+      font-size: 80px;
+    }
+  }
+  .greeting__jobTitle{
+    font-size: 12px;
+    @include tablet(){
+      font-size: 24px;
+    }
+    @include desktop(){
+      font-size: 50px;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "RobotoSlab-Regular";
+  src: url(./globalAssets/fonts/Roboto_Slab/RobotoSlab-Regular.ttf);
+}
+@font-face {
+  font-family: "RobotoSlab-Medium";
+  src: url(./globalAssets/fonts/Roboto_Slab/RobotoSlab-Medium.ttf);
+}
+
+@font-face {
+  font-family: "RobotoSlab-Bold";
+  src: url(./globalAssets/fonts/Roboto_Slab/RobotoSlab-Bold.ttf);
+}
+
+:root {
+  --font-color: #001240;
+  --mainBgColor: #fafffe;
+}
+
+body {
+  background-color: var(--mainBgColor);
+}
+body {
+  width: 100%;
+  margin: 0;
+  min-width: 360px;
+}
+
+main {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  .navBar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    padding: 12px 0;
+    gap: 55px;
+    button {
+      font-family: "RobotoSlab-Bold";
+      font-size: 24px;
+      line-height: 32px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.1em;
+      color: #000000;
+      border: none;
+      background: transparent;
+    }
+  }
+  .MainContainer {
+    background: var(--mainBgColor);
+    box-shadow: 15px 15px 15px 5px rgba(0, 0, 0, 0.1),
+      -15px -15px 15px 5px rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    width: 100%;
+    height: 500px;
+  }
+}
