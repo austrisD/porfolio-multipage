@@ -1,10 +1,8 @@
 @import "../../globalAssets/global.scss";
 .greeting {
   box-sizing: border-box;
-  width: calc(100% - 40px);
   height: 100vh;
   max-width: 1440px;
-  min-width: 360px;
   transition: 500ms;
   margin: 0 auto;
 
@@ -43,31 +41,38 @@
   }
 }
 /******greeting screen style****/
-.headerTop{
-  height: 90px;
+.headerTop {
+  box-sizing: border-box;
+  height: 100px;
   background-position: left;
   align-items: flex-end;
-  @include tablet(){
-    height: 280px;
+
+  @include tablet() {
+    height: 200px;
   }
-  @include desktop(){
-    height: 320px;
+  @include desktop() {
+    height: 300px;
   }
-  .greeting__name{
-    font-size: 20px;
-    @include tablet(){
+
+  .greeting__name {
+    font-size: 15px;
+    @include mobile() {
+      font-size: 20px;
+    }
+    @include tablet() {
       font-size: 37px;
     }
-    @include desktop(){
+    @include desktop() {
       font-size: 80px;
     }
   }
-  .greeting__jobTitle{
+
+  .greeting__jobTitle {
     font-size: 12px;
-    @include tablet(){
+    @include tablet() {
       font-size: 24px;
     }
-    @include desktop(){
+    @include desktop() {
       font-size: 50px;
     }
   }
