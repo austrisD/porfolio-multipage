@@ -55,14 +55,16 @@ main {
           display: none;
         }
       }
-      button {
+      a {
         display: none;
+        color: var(--font-color);
         @include tablet() {
           display: block;
         }
       }
     }
-    button {
+
+    a {
       font-family: "RobotoSlab-Bold";
       font-size: 24px;
       line-height: 32px;
@@ -72,6 +74,8 @@ main {
       border-radius: 10px;
       transition: 200ms;
       margin-right: 55px;
+      text-decoration: none;
+      color: var(--font-color);
 
       &:hover {
         background: linear-gradient(
@@ -88,6 +92,19 @@ main {
       }
     }
   }
+  .active {
+    background: linear-gradient(
+      90deg,
+      rgba(173, 0, 255, 1) 0%,
+      rgba(0, 71, 254, 1) 25%,
+      rgba(27, 60, 254, 1) 50%,
+      rgba(0, 247, 203, 1) 80%,
+      rgba(219, 255, 0, 1) 100%
+    );
+    background-clip: text;
+    color: transparent;
+  }
+
   .MainContainer {
     box-sizing: border-box;
     background: var(--secondaryBgColor);
