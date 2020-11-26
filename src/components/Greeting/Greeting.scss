@@ -1,79 +1,26 @@
 @import "../../globalAssets/global.scss";
+
 .greeting {
-  box-sizing: border-box;
+  width: 100%;
   height: 100vh;
-  max-width: 1440px;
-  transition: 500ms;
-  margin: 0 auto;
-
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  box-sizing: border-box;
+  background-color: var(--mainBgColor);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 22px;
+  font-family: Roboto;
+  font-weight: bold;
   .greeting__name {
-    font-family: "RobotoSlab-Bold";
-    font-size: 30px;
+    font-size: 50px;
+    line-height: 100%;
     letter-spacing: 0.205em;
-    transition: 1s;
-    margin: 0;
-    @include tablet() {
-      font-size: 56px;
-    }
-    @include desktop() {
-      font-size: 80px;
-    }
+    color: #f7f7f7;
   }
-  .greeting__jobTitle {
-    font-family: "RobotoSlab-Regular";
-    font-style: normal;
-    font-size: 24px;
-    transition: 1s;
-    margin: 0;
-    @include tablet() {
-      font-size: 50px;
-    }
-  }
-}
-/******greeting screen style****/
-.headerTop {
-  box-sizing: border-box;
-  height: 100px;
-  background-position: left;
-  align-items: flex-end;
-
-  @include tablet() {
-    height: 200px;
-  }
-  @include desktop() {
-    height: 300px;
-  }
-
-  .greeting__name {
-    font-size: 15px;
-    @include mobile() {
-      font-size: 20px;
-    }
-    @include tablet() {
-      font-size: 37px;
-    }
-    @include desktop() {
-      font-size: 80px;
-    }
-  }
-
-  .greeting__jobTitle {
-    font-size: 12px;
-    @include tablet() {
-      font-size: 24px;
-    }
-    @include desktop() {
-      font-size: 50px;
-    }
+  .greeting__title {
+    font-size: 40px;
+    line-height: 100px;
+    text-align: center;
+    color: #adaaa5;
+    font-weight: normal;
   }
 }

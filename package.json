@@ -37,7 +37,7 @@
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.1",
     "@testing-library/user-event": "^12.2.2",
-    "postcss-normalize": "^9.0.0",
-    "node-sass": "^4.14.1"
+    "node-sass": "^4.14.1",
+    "postcss-normalize": "^9.0.0"
   }
 }

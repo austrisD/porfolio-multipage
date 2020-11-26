@@ -1,117 +1,25 @@
 @import "./globalAssets/global.scss";
-@font-face {
-  font-family: "RobotoSlab-Regular";
-  src: url(./globalAssets/fonts/Roboto_Slab/RobotoSlab-Regular.ttf);
-}
-@font-face {
-  font-family: "RobotoSlab-Medium";
-  src: url(./globalAssets/fonts/Roboto_Slab/RobotoSlab-Medium.ttf);
-}
 
-@font-face {
-  font-family: "RobotoSlab-Bold";
-  src: url(./globalAssets/fonts/Roboto_Slab/RobotoSlab-Bold.ttf);
-}
 
+@font-face{
+  font-family: Roboto;
+  src: url(./globalAssets/Roboto/Roboto-Regular.ttf);
+  font-weight: normal;
+}
+@font-face{
+  font-family: Roboto;
+  src: url(./globalAssets/Roboto/Roboto-Bold.ttf);
+  font-weight: bold;
+}
 :root {
-  --font-color: #001240;
-  --mainBgColor: #fafffe;
-  --secondaryBgColor: #f4f7f7;
+  --fontLite: #f6f6f6;
+  --fontSecondary: #adaaa5;
+  --mainBgColor: #0a3d40;
+  --mainOrange: #dd7336;
 }
 
-body {
-  background-color: var(--mainBgColor);
-}
-body {
+* {
   box-sizing: border-box;
-  width: 100%;
   margin: 0;
-  min-width: 360px;
-  padding: 0 20px;
-}
-
-main {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
-  .navBar {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-bottom: 20px;
-    justify-content: space-between;
-    @include tablet() {
-      justify-content: flex-start;
-    }
-    .burgerMenu {
-      display: flex;
-      flex-direction: row;
-      svg {
-        @include tablet() {
-          display: none;
-        }
-      }
-      a {
-        display: none;
-        color: var(--font-color);
-        @include tablet() {
-          display: block;
-        }
-      }
-    }
-
-    a {
-      font-family: "RobotoSlab-Bold";
-      font-size: 24px;
-      line-height: 32px;
-      letter-spacing: 0.1em;
-      border: none;
-      background-color: transparent;
-      border-radius: 10px;
-      transition: 200ms;
-      margin-right: 55px;
-      text-decoration: none;
-      color: var(--font-color);
-
-      &:hover {
-        background: linear-gradient(
-          90deg,
-          rgba(173, 0, 255, 1) 0%,
-          rgba(0, 71, 254, 1) 25%,
-          rgba(27, 60, 254, 1) 50%,
-          rgba(0, 247, 203, 1) 80%,
-          rgba(219, 255, 0, 1) 100%
-        );
-        background-clip: text;
-        color: transparent;
-        transition: 200ms;
-      }
-    }
-  }
-  .active {
-    background: linear-gradient(
-      90deg,
-      rgba(173, 0, 255, 1) 0%,
-      rgba(0, 71, 254, 1) 25%,
-      rgba(27, 60, 254, 1) 50%,
-      rgba(0, 247, 203, 1) 80%,
-      rgba(219, 255, 0, 1) 100%
-    );
-    background-clip: text;
-    color: transparent;
-  }
-
-  .MainContainer {
-    box-sizing: border-box;
-    background: var(--secondaryBgColor);
-    box-shadow: 15px 15px 15px 5px #0000001a, -15px -15px 15px 5px #ffffffcc;
-    border-radius: 20px;
-    width: 100%;
-    height: 500px;
-    padding: 0 10px;
-  }
+  padding: 0;
 }
