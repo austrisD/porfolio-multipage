@@ -3,7 +3,7 @@ import "./Greeting.scss";
 
 const Greeting = () => {
   return (
-    <header className="greeting" >
+    <header id="home" className="greeting">
       <h1 className="greeting__name">Austris Daugulis</h1>
       <h2 className="greeting__title">Front-end developer</h2>
     </header>

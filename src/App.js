@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import "./style.scss";
-import { Route, BrowserRouter, Switch } from "react-router-dom";
 import Nav from "./components/navBar/Nav";
 /*****************************************/
 import Greeting from "./components/Greeting/Greeting";
@@ -9,40 +8,26 @@ import Contacts from "./components/Contacts/Contacts";
 import Portfolio from "./components/portfolio/Portfolio";
 import Skills from "./components/skills/Skills";
 
-const App = () => {
-  const [GreetingScreen, setGreetingScreen] = useState(true);
-  setInterval(() => {
-    setGreetingScreen(false);
-  }, 3000);
 
+// window.addEventListener('scroll',(event)=>{
+//   console.log(event.pageYOffset);
+//   console.log(window.pageYOffset+'windows');
+
+// })
+
+const App = () => {
   return (
     <>
-      <BrowserRouter>
-        <Greeting />
-        <main style={{ display: GreetingScreen === false ? "flex" : "none" }}>
-          <Nav />
-          <section className="MainContainer">
-            <Switch>
-              <Route path="/About">
-                <AboutME />
-              </Route>
-
-              <Route path="/Contacts">
-                <Contacts />
-              </Route>
-
-              <Route path="/Portfolio">
-                <Portfolio />
-              </Route>
-
-              <Route path="/Skills">
-                <Skills />
-              </Route>
-
-            </Switch>
-          </section>
-        </main>
-      </BrowserRouter>
+      <Greeting />
+      <main>
+        <Nav />
+        <section className="MainContainer">
+          <AboutME />
+          <Skills />
+          <Portfolio />
+          <Contacts />
+        </section>
+      </main>
     </>
   );
 };

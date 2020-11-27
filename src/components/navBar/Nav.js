@@ -1,17 +1,22 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import "./Nav.scss";
+import { ReactComponent as Arrow } from "./arrow.svg";
 
 const Nav = () => {
   return (
-    <nav className="navBar">
-      <NavLink to="./About">About</NavLink>
-      <div className="burgerMenu">
-        <NavLink to="./Skills">Skills</NavLink>
-        <NavLink to="./Portfolio">Portfolio</NavLink>
-        <NavLink to="./Contacts">Contacts</NavLink>
-      </div>
-    </nav>
+    <div className="navBar">
+      <a href="#home" className="nav__arrowBtn">
+        <Arrow />
+      </a>
+      <nav className="navBar__sticky">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">
+          Portfolio
+        </a>
+        <a href="#contacts">Contacts</a>
+      </nav>
+    </div>
   );
 };
 

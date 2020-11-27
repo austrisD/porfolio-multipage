@@ -1,1 +1,49 @@
 @import "../../globalAssets/global.scss";
+
+.navBar {
+  box-sizing: border-box;
+  position:sticky;
+  top: 40px;
+  display: flex;
+  width: 40px;
+  margin-left: auto;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 40px;
+  .nav__arrowBtn {
+    width: 100px;
+    background-color: var(--mainOrange);
+    border-radius: 30px 30px 0 0;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      background-color: var(--activeOrange);
+    }
+    svg {
+      width: 50px;
+      height: 50px;
+      fill: var(--fontLite);
+    }
+  }
+  .navBar__sticky {
+    > * {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100px;
+      height: 100px;
+      text-decoration: none;
+      color: var(--fontLite);
+      background-color: var(--mainOrange);
+      &:hover {
+        background-color: var(--activeOrange);
+      }
+    }
+    :last-child {
+      border-radius: 0 0 30px 30px;
+    }
+  }
+}

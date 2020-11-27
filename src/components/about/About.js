@@ -5,9 +5,9 @@ import './About.scss';
 
 const AboutMe = () => {
     return (
-      <div className="aboutMe">
-          <h3>About me</h3>
-        <p>
+      <div id="about" className="about">
+        <h3>About me</h3>
+        <p className="about__description">
           Young inspiring Front-end developer from Riga. I am a person who likes
           to find a simple solution for complex problems. In addition to that
           illustrating code logic in a simple eye-pleasing manner. Also, I don'

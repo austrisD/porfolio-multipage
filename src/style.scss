@@ -1,12 +1,11 @@
 @import "./globalAssets/global.scss";
 
-
-@font-face{
+@font-face {
   font-family: Roboto;
   src: url(./globalAssets/Roboto/Roboto-Regular.ttf);
   font-weight: normal;
 }
-@font-face{
+@font-face {
   font-family: Roboto;
   src: url(./globalAssets/Roboto/Roboto-Bold.ttf);
   font-weight: bold;
@@ -16,10 +15,24 @@
   --fontSecondary: #adaaa5;
   --mainBgColor: #0a3d40;
   --mainOrange: #dd7336;
+  --activeOrange: #f38b50;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.MainContainer{
+  margin-top: -500px;
+  > *{
+    height: 100vh;
+    padding-right: 140px;
+    padding-left: 40px;
+    padding-top: 40px;
+  }
 }
