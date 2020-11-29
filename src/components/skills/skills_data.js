@@ -57,4 +57,10 @@ export const skills_data = [
     level: "Average",
     subSkill: ["crate rep", "push, fetch, clone", "hosting github pages"],
   },
+
+  {
+    skill: "Figma",
+    level: "Average",
+    subSkill: ["Basic design", "Using plugins", "creating svg"],
+  },
 ];
