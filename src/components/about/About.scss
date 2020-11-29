@@ -1,14 +1,24 @@
 @import "../../globalAssets/global.scss";
 
-
-.about{
-    background-color: rgb(240, 240, 240);
-    h3{
-        font-size: 80px;
-    }
+.about {
+  background-color: rgb(240, 240, 240);
+  h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 100px;
+  }
 }
-.about__description{
-    margin-top: 50px;
-    margin-left: 100px;
-    width: 500px;
+.about__description {
+  margin-top: 50px;
+  margin-left: 100px;
+  max-width: 80%;
+  width: 930px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 33px;
+  line-height: 40px;
+  color: var(--fontSecondary);
 }

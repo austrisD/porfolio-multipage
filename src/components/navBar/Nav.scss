@@ -2,7 +2,7 @@
 
 .navBar {
   box-sizing: border-box;
-  position:sticky;
+  position: sticky;
   top: 40px;
   display: flex;
   width: 40px;
@@ -10,6 +10,11 @@
   flex-direction: column;
   align-items: flex-end;
   margin-right: 40px;
+  transform: translateY(40px);
+  .nav__down {
+    transition: 1s;
+    transform: translate(0, -200px);
+  }
   .nav__arrowBtn {
     width: 100px;
     background-color: var(--mainOrange);
@@ -19,6 +24,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    color: var(--fontLite);
+    transition: 1s;
+
     &:hover {
       background-color: var(--activeOrange);
     }

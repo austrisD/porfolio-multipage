@@ -4,9 +4,9 @@ import "./Portfolio.scss";
 const Portfolio = () => {
  
   return (
-    <div id="portfolio">
+    <div id="portfolio" className="portfolio">
       <h3>Portfolio</h3>
-      <p>Portfolio</p>
+      <div className="elements"></div>
     </div>
   );
 };
