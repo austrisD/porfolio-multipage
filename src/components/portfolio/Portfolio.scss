@@ -8,10 +8,121 @@
     font-size: 50px;
     line-height: 100px;
   }
-  .elements{
-      width: 200px;
-      height: 200px;
-      border-radius: 50px;
-      background-color: red;
+}
+.portfolio__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1050px;
+  width: 100%;
+  margin: 0 auto;
+  > * {
+    border: solid 7px var(--mainOrange);
+    display: flex;
+    flex-direction: row;
+    border-bottom: none;
   }
+  .portfolio__group__name {
+    align-self: center;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  > :nth-child(2n + 2) {
+    border-left: none;
+    .portfolio__group__name {
+      transform: translateX(-100%);
+    }
+    .portfolio__work__group_dates{
+      margin-right: -88px;
+
+    }
+  }
+  > :nth-child(2n + 1) {
+    border-right: none;
+    flex-direction: row-reverse;
+    .portfolio__group__name {
+      transform: translateX(100%);
+    }
+      .portfolio__work__group_dates{
+      margin-left: -88px;
+
+    }
+  }
+}
+.portfolio__work__group {
+  width: 100%;
+  padding: 60px;
+  .portfolio__group__name {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  .portfolio__works {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+.portfolio__works_hover_content {
+  cursor: pointer;
+  border: 0.5px solid #000;
+  > * {
+    transition: 1s;
+  }
+  .work_name {
+    opacity: 0;
+    height: fit-content;
+    margin-bottom: -10px;
+    text-align: center;
+  }
+  img {
+    height: 250px;
+  }
+  &:hover {
+    img {
+      opacity: 0.2;
+    }
+    .work_name {
+      opacity: 1;
+    }
+  }
+}
+.portfolio__work__group_dates{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  :nth-child(1){
+    transform: translateY(-88px);
+  }
+   :nth-child(2){
+    transform: translateY(88px);
+  }
+}
+
+
+
+.circle{
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.portfolio__year {
+  align-self: flex-start;
+  transform: translate(-22px, 27px);
+  background-color: var(--fontLite);
+  border-radius: 50%;
+  border: none;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  justify-content: center;
 }
